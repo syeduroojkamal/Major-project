@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="contact.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script >
+    function alphaOnly(event) {
+  var key = event.keyCode;
+  return ((key >= 65 && key <= 90) || key == 8 || key == 32);
+};
+  </script>
+
+<style >
+    body{
+    background: -webkit-linear-gradient(left,black,maroon);
+}
+  .contact-form {
+    background: #a1a2a3a1;
+    border-top-left-radius: 10% 50%;
+   
+    border-bottom-right-radius: 10% 50%;
+}
+footer .widget h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#map {
+  height:150px;
+  width: 100%;
+}
+</style>
+</head>
+<body style="background: -webkit-linear-gradient(left, black, maroon); background-size: cover;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background:black;">
+    <div class="container">
+
+      <a class="navbar-brand js-scroll-trigger" href="index.php" style="margin-top: 10px;margin-left:-65px;font-family: 'IBM Plex Sans', sans-serif;"><h4>HEALTHCARE CENTER</h4></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" style="margin-right: 40px;">
+            <a class="nav-link js-scroll-trigger" href="index.php" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>HOME</h6></a>
+          </li>
+
+          <li class="nav-item" style="margin-right: 40px;">
+            <a class="nav-link js-scroll-trigger" href="services.html" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>ABOUT US</h6></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="contact.html" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>CONTACT</h6></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+    <div class="container contact-form"  style="font-family: 'IBM Plex Sans', sans-serif; padding-top:50px;">
+           
+            <form method="post" action="contact.php">
+                <h3 style="color: whitesmoke;">Drop Us a Message</h3>
+               <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" onkeydown="return alphaOnly(event);" required/>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="txtEmail" class="form-control" placeholder="Your Email *" value="" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" minlength="10" maxlength="10" required />
+                        </div>
+                        <div class="form-group" >
+                            <input type="submit" name="btnSubmit" class="btnContact" style="background: maroon;"  value="Send Message" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group" >
+                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;" required></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+</div>
+<div class="container" style="color:white;">
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="wow fadeInDown" data-wow-delay="0.1s">
+        <div class="widget">
+          <h5>About HEALTHCARE</h5>
+          <p>
+            Lorem ipsum dolor sit amet, ne nam purto nihil impetus, an facilisi accommodare sea
+          </p>
+        </div>
+      </div>
+      <div class="wow fadeInDown" data-wow-delay="0.1s">
+        <div class="widget">
+          <h5>Information</h5>
+          <ul >
+            <li><a style="color: #e4d6d6" href="#">Home</a></li>
+            <li><a style="color: #e4d6d6" href="#">Laboratory</a></li>
+            <li><a style="color: #e4d6d6"href="#">Medical treatment</a></li>
+            <li><a style="color: #e4d6d6" href="#">Terms & conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="wow fadeInDown" data-wow-delay="0.1s">
+        <div class="widget">
+          <h5>HEALTHCARE CENTER</h5>
+          <p>
+            Nam leo lorem, tincidunt id risus ut, ornare tincidunt naqunc sit amet.
+          </p>
+          <ul>
+            <li>
+              <span class="fa-stack fa-lg">
+            <i class="fa fa-calendar-o fa-stack-1x fa-inverse"></i>
+          </span> Monday - Saturday, 8am to 10pm
+            </li>
+            <li>
+              <span class="fa-stack fa-lg">
+            <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+          </span> +62 0888 904 711
+            </li>
+            <li>
+              <span class="fa-stack fa-lg">
+            <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+          </span> .com
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="wow fadeInDown" data-wow-delay="0.1s">
+        <div class="widget">
+          <h5>Our location</h5>
+          <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28921.830849044756!2d73.88068129999999!3d25.02630635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1645429392170!5m2!1sen!2sin"></iframe></div>
+          
+        </div>
+      </div>
+    
+    
+      
+    </div>
+  </div>
+</div>
+
+</footer>
+    <script src="js/map.js"></script>
+</body>
+</html>
+
+
+
